@@ -1,0 +1,140 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+
+/* BARRA SUPERIOR */
+.top-bar {
+    background: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+    header img {
+        width: 120px;
+    }
+
+    header h1 {
+        color: #4b0082;
+    }
+
+/* NAV MODERNO */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+    .menu a:hover {
+        color: #4b0082;
+    }
+
+.extra-links button {
+    padding: 8px 15px;
+    border: none;
+    background: #4b0082;
+    color: white;
+    border-radius: 5px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* DESTACADO */
+.destacado {
+    grid-column: 1 / 2;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+    .destacado h2 {
+        color: #4b0082;
+    }
+
+/* ARTICULOS */
+.articulos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+    .articulos article {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+/* FORMULARIO */
+.formulario {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .formulario input,
+    .formulario textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .formulario button {
+        background: #4b0082;
+        color: white;
+        border: none;
+        padding: 10px;
+    }
+
+/* FOOTER GRANDE */
+footer {
+    background: #111;
+    color: white;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+copyright {
+    text-align: center;
+}
