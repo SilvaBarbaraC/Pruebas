@@ -1,96 +1,145 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>El Faro</title>
-    <link rel="stylesheet" href="css/estilos.css">
+<meta charset="UTF-8">
+<title>El Faro</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="avisos">
-        <p>📰 Último minuto: Noticias actualizadas | ⚽ Deportes | 💼 Negocios</p>
-    </div>
+<!-- AVISOS -->
+<div class="avisos">
+<p>📰 Último minuto: Noticias actualizadas — ⚽ Deportes — 💼 Negocios — 📢 Colabora con nosotros</p>
+</div>
 
-    <header>
-        <img src="img/logo.png">
-        <h1>El Faro</h1>
-        <div id="fechaHora"></div>
-    </header>
+<!-- HEADER -->
+<header>
+<img src="img/logo.png">
+<h1>El Faro</h1>
+<div id="fechaHora"></div>
+</header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="deporte.html">Deportes</a>
-        <a href="negocios.html">Negocios</a>
-    </nav>
+<!-- NAV -->
+<nav>
+<a href="index.html">Inicio</a>
+<a href="deporte.html">Deportes</a>
+<a href="negocios.html">Negocios</a>
+</nav>
 
-    <main>
+<!-- MAIN -->
+<main>
 
-        <section class="accesos">
-            <h2>Explora secciones</h2>
-            <div class="accesos-grid">
-                <a href="deporte.html" class="acceso-card">⚽ Deportes</a>
-                <a href="negocios.html" class="acceso-card">💼 Negocios</a>
-            </div>
-        </section>
+<!-- ACCESOS -->
+<section class="accesos">
+<h2>Explora secciones</h2>
+<div class="accesos-grid">
+<a href="deporte.html" class="acceso-card">⚽ Deportes</a>
+<a href="negocios.html" class="acceso-card">💼 Negocios</a>
+</div>
+</section>
 
-        <section>
-            <h2>Noticias principales</h2>
-            <div class="card">
-                <table>
-                    <tr>
-                        <td>
-                            <h3>Gran avance tecnológico</h3>
-                            <p>Innovaciones recientes están cambiando la industria global.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Economía en crecimiento</h3>
-                            <p>El mercado muestra señales positivas este trimestre.</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+<!-- VIDEO -->
+<section class="video-section">
+<h2>Video destacado</h2>
+<video controls>
+<source src="media/video.mp4" type="video/mp4">
+</video>
+</section>
 
-        <section class="relacionados">
-            <h2>Otros artículos</h2>
-            <div class="mini-grid">
-                <article class="mini-card"><h4>Noticia breve 1</h4></article>
-                <article class="mini-card"><h4>Noticia breve 2</h4></article>
-                <article class="mini-card"><h4>Noticia breve 3</h4></article>
-            </div>
-        </section>
+<!-- NOTICIAS -->
+<section>
+<h2>Noticias principales</h2>
+<div class="card">
+<table>
+<tr>
+<td>
+<h3>Gran avance tecnológico</h3>
+<p>Innovaciones recientes están cambiando la industria global.</p>
+</td>
+</tr>
 
-    </main>
+<tr>
+<td>
+<h3>Economía en crecimiento</h3>
+<p>El mercado muestra señales positivas este trimestre.</p>
+</td>
+</tr>
+</table>
+</div>
+</section>
 
-    <footer class="footer">
-        <div class="footer-container">
+<!-- ARTICULOS PEQUEÑOS -->
+<section class="relacionados">
+<h2>Otros artículos</h2>
+<div class="mini-grid">
+<article class="mini-card">Noticia breve 1</article>
+<article class="mini-card">Noticia breve 2</article>
+<article class="mini-card">Noticia breve 3</article>
+</div>
+</section>
 
-            <div class="footer-col">
-                <h3>El Faro</h3>
-                <p>Portal de noticias moderno y actualizado.</p>
-            </div>
+<!-- FORMULARIO -->
+<section class="card">
+<h2>Colabora con nosotros</h2>
+<form>
+<input type="text" placeholder="Tu nombre" required>
+<textarea placeholder="Escribe tu artículo..." required></textarea>
+<button type="submit">Enviar</button>
+</form>
+</section>
 
-            <div class="footer-col">
-                <h4>Secciones</h4>
-                <a href="index.html">Inicio</a>
-                <a href="deporte.html">Deportes</a>
-                <a href="negocios.html">Negocios</a>
-            </div>
+</main>
 
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <p>contacto@elfaro.cl</p>
-            </div>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-container">
 
-        </div>
+<div class="footer-col">
+<h3>El Faro</h3>
+<p>Portal de noticias moderno y actualizado.</p>
+</div>
 
-        <div class="footer-bottom">
-            © 2026 El Faro - Todos los derechos reservados
-        </div>
-    </footer>
+<div class="footer-col">
+<h4>Secciones</h4>
+<a href="index.html">Inicio</a>
+<a href="deporte.html">Deportes</a>
+<a href="negocios.html">Negocios</a>
+</div>
+
+<div class="footer-col">
+<h4>Contacto</h4>
+<p>contacto@elfaro.cl</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 El Faro
+</div>
+</footer>
+
+<!-- MUSICA -->
+<audio id="musica" autoplay loop>
+<source src="media/musica.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SCRIPTS -->
+<script>
+function actualizarHora() {
+    const ahora = new Date();
+    const opciones = { 
+        year: 'numeric', month: 'long', day: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit'
+    };
+    document.getElementById("fechaHora").innerHTML = ahora.toLocaleDateString('es-ES', opciones);
+}
+setInterval(actualizarHora, 1000);
+actualizarHora();
+
+const audio = document.getElementById("musica");
+audio.volume = 0.2;
+</script>
 
 </body>
 </html>
