@@ -131,19 +131,24 @@ function actualizarHora() {
 setInterval(actualizarHora, 1000);
 actualizarHora();
 <script>
+    
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
 
     const audio = document.getElementById("musica");
     const boton = document.getElementById("controlMusica");
 
-    // volumen inicial
-    if (audio) {
-        audio.volume = 0.2;
-    }
+    if (!audio) return;
 
-    // control botón
-    if (boton && audio) {
+    // Forzar volumen bajo SIEMPRE
+    audio.volume = 0.1;
+
+    // Intentar reproducir (por si autoplay falla)
+    audio.play().catch(() => {
+        console.log("Autoplay bloqueado por navegador");
+    });
+
+    if (boton) {
         boton.addEventListener("click", function () {
             if (audio.paused) {
                 audio.play();
