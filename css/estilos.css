@@ -435,7 +435,7 @@ main {
     transform: scale(1.05);
 }
 
-/* ===== FORM ===== */
+/*FORMA */
 form {
     display: flex;
     flex-direction: column;
@@ -456,7 +456,7 @@ form button {
     border-radius: 8px;
 }
 
-/* ===== FOOTER ===== */
+/*FOOTER */
 .footer {
     background: #1a1a1a;
     color: white;
@@ -546,4 +546,9 @@ form {
 .footer-bottom {
     text-align: center;
     padding: 10px;
+}
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
