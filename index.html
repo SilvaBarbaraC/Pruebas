@@ -18,7 +18,6 @@
 <h1>El Faro</h1>
 <div id="fechaHora"></div>
 </header>
-<button id="controlMusica">🔊 Pausar música</button>
 
 <nav>
 <a href="index.html">Inicio</a>
@@ -131,37 +130,6 @@ function actualizarHora() {
 setInterval(actualizarHora, 1000);
 actualizarHora();
 <script>
-    
-<script>
-window.addEventListener("load", function () {
-
-    const audio = document.getElementById("musica");
-    const boton = document.getElementById("controlMusica");
-
-    if (!audio) return;
-
-    // Forzar volumen bajo SIEMPRE
-    audio.volume = 0.01;
-
-    // Intentar reproducir (por si autoplay falla)
-    audio.play().catch(() => {
-        console.log("Autoplay bloqueado por navegador");
-    });
-
-    if (boton) {
-        boton.addEventListener("click", function () {
-            if (audio.paused) {
-                audio.play();
-                boton.textContent = "🔊 Pausar música";
-            } else {
-                audio.pause();
-                boton.textContent = "🔇 Reproducir música";
-            }
-        });
-    }
-
-});
-</script>
 
 </body>
 </html>
