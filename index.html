@@ -141,7 +141,7 @@ window.addEventListener("load", function () {
     if (!audio) return;
 
     // Forzar volumen bajo SIEMPRE
-    audio.volume = 0.1;
+    audio.volume = 0.01;
 
     // Intentar reproducir (por si autoplay falla)
     audio.play().catch(() => {
