@@ -18,6 +18,8 @@
 <div id="fechaHora"></div>
 </header>
 
+<button id="controlMusica">🔊 Pausar música</button>    
+    
 <nav>
 <a href="index.html">Inicio</a>
 <a href="deporte.html">Deportes</a>
@@ -102,6 +104,21 @@ actualizarHora();
 
 const audio = document.getElementById("musica");
 audio.volume = 0.2;
+</script>
+
+<script>
+const audio = document.getElementById("musica");
+const boton = document.getElementById("controlMusica");
+
+boton.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        boton.textContent = "🔊 Pausar música";
+    } else {
+        audio.pause();
+        boton.textContent = "🔇 Reproducir música";
+    }
+});
 </script>
 
 </body>
