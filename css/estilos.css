@@ -1,140 +1,357 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+﻿/* Importación de fuente externa desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo general del sitio */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
+    font-family: 'Poppins', sans-serif; /* Nueva tipografía */
+    font-size: 16px;
+    background-color: #f5f5f5; /* Fondo gris solicitado */
+    color: #111;
+    line-height: 1.6;
 }
 
-/* BARRA SUPERIOR */
-.top-bar {
-    background: #4b0082;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* HEADER */
+/* Header */
 header {
+    border-bottom: 3px solid #e0e0e0;
+    padding: 30px 0;
     text-align: center;
-    padding: 20px;
 }
 
-    header img {
-        width: 120px;
-    }
-
-    header h1 {
-        color: #4b0082;
-    }
-
-/* NAV MODERNO */
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: white;
-    border-bottom: 1px solid #ddd;
-}
-
-.menu a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #333;
-}
-
-    .menu a:hover {
-        color: #4b0082;
-    }
-
-.extra-links button {
-    padding: 8px 15px;
-    border: none;
-    background: #4b0082;
-    color: white;
-    border-radius: 5px;
-}
-
-/* CONTENEDOR */
-.contenedor {
-    width: 90%;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-}
-
-/* DESTACADO */
-.destacado {
-    grid-column: 1 / 2;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-    .destacado h2 {
-        color: #4b0082;
-    }
-
-/* ARTICULOS */
-.articulos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-    .articulos article {
-        background: white;
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-/* FORMULARIO */
-.formulario {
-    grid-column: 1 / -1;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-    .formulario input,
-    .formulario textarea {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-
-    .formulario button {
-        background: #4b0082;
-        color: white;
-        border: none;
-        padding: 10px;
-    }
-
-/* FOOTER GRANDE */
-footer {
-    background: #111;
-    color: white;
-    margin-top: 40px;
-    padding: 40px;
-}
-
-.footer-contenido {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-footer h4 {
+header img {
+    width: 15%;
+    max-width: 200px;
     margin-bottom: 10px;
 }
 
-copyright {
+header h1 {
+    font-size: 40px;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
     text-align: center;
+}
+
+/* Links con subrayado por defecto */
+nav a {
+    text-decoration: underline;
+    color: #333;
+    margin: 0 20px;
+    font-weight: 400;
+}
+
+/* Hover en links */
+nav a:hover {
+    font-weight: bold; /* Negrita */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Contenedor principal */
+section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Títulos */
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4b0082;
+    padding-bottom: 10px;
+}
+
+/* Artículos en grilla */
+
+/* Se convierte la tabla en grid visual */
+table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    background-color: transparent;
+}
+
+/* Encabezado de tabla oculto */
+th {
+    display: none;
+}
+
+/* Cada fila como tarjeta */
+tr {
+    display: block;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Contenido dentro de tarjetas */
+td {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hover en bloques */
+tr:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Multimedia */
+video, audio {
+    margin-top: 20px;
+    width: 50%;
+}
+
+/* Footer personalizado */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #c9d2d0; /* color solicitado */
+    color: #31231e; /* color solicitado */
+}
+
+/* Modificaciones Responsivas */
+
+/* Tablet */
+@media (max-width: 900px) {
+    table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 500px) {
+    table {
+        grid-template-columns: 1fr;
+    }
+}
+/* Fecha y hora */
+#fechaHora {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Contador de artículos */
+#contadorArticulos {
+    font-weight: bold;
+    color: #4b0082;
+}
+
+/* Formularios (artículos y contacto) */
+section input,
+section textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Botones */
+section button {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* Hover botón */
+    section button:hover {
+        background-color: #000;
+    }
+
+/* Subtítulos (formularios) */
+section h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #4b0082;
+}
+
+/* Ajustes responsivos para formularios */
+@media (max-width: 500px) {
+    section input,
+    section textarea {
+        width: 100%;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+/* Hover igual que artículos */
+.card:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Inputs dentro de tarjetas */
+.card input,
+.card textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Botones */
+.card button {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botón */
+.card button:hover {
+    background-color: #000;
+}
+
+/* Títulos */
+.card h3 {
+    margin-bottom: 10px;
+    color: #4b0082;
+}
+/* ===== AVISOS ===== */
+.avisos {
+    background: #4b0082;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    overflow: hidden;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== ACCESOS ===== */
+.accesos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.acceso-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ===== MINI ARTICULOS ===== */
+.mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.mini-card {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+.mini-card:hover {
+    transform: scale(1.03);
+    background: #f0f0f0;
+    cursor: pointer;
+}
+nav a:hover {
+    color: #4b0082;
+}
+.mini-card:hover {
+    transform: scale(1.03);
+    background: #f0f0f0;
+    cursor: pointer;
+}
+/* NAV */
+nav a {
+    position: relative;
+}
+
+    nav a:hover {
+        color: #4b0082;
+    }
+
+/* HOVER CARDS */
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* MINI CARDS */
+.mini-card:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ACCESOS */
+.acceso-card:hover {
+    transform: translateY(-5px);
+    background: #4b0082;
+    color: white;
+    transition: 0.3s;
 }
