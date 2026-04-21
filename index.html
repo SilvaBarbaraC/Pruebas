@@ -2,15 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>El Faro - Inicio</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- BARRA DE AVISOS -->
-    <div class="top-bar">
-        Última hora: Nuevo parque inaugurado en la ciudad
+    <div class="avisos">
+        <p>📰 Último minuto: Noticias actualizadas | ⚽ Deportes | 💼 Negocios</p>
     </div>
 
     <header>
@@ -19,75 +18,79 @@
         <div id="fechaHora"></div>
     </header>
 
-    <!-- NAV MEJORADO -->
-    <nav class="main-nav">
-        <div class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="deporte.html">Deporte</a>
-            <a href="negocios.html">Negocios</a>
-        </div>
-
-        <div class="extra-links">
-            <button>☰ Secciones</button>
-        </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="deporte.html">Deportes</a>
+        <a href="negocios.html">Negocios</a>
     </nav>
 
-    <main class="contenedor">
+    <main>
 
-        <!-- ARTÍCULO DESTACADO -->
-        <section class="destacado">
-            <h2>Inauguración de nuevo parque</h2>
-            <p>
-                En el pueblo de Comala se vive la vida al aire libre...
-            </p>
+        <section class="accesos">
+            <h2>Explora secciones</h2>
+            <div class="accesos-grid">
+                <a href="deporte.html" class="acceso-card">⚽ Deportes</a>
+                <a href="negocios.html" class="acceso-card">💼 Negocios</a>
+            </div>
         </section>
 
-        <!-- ARTÍCULOS SECUNDARIOS -->
-        <section class="articulos">
-            <article>
-                <h3>Alza en turismo</h3>
-                <p>Aumenta el turismo en Salamanca...</p>
-            </article>
-
-            <article>
-                <h3>Museos gratuitos</h3>
-                <p>Museos abren sus puertas...</p>
-            </article>
+        <section>
+            <h2>Noticias principales</h2>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Gran avance tecnológico</h3>
+                            <p>Innovaciones recientes están cambiando la industria global.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Economía en crecimiento</h3>
+                            <p>El mercado muestra señales positivas este trimestre.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
-        <!-- FORMULARIO -->
-        <section class="formulario">
-            <h3>Agregar nuevo artículo</h3>
-
-            <input type="text" placeholder="Título">
-            <input type="text" placeholder="Categoría">
-            <textarea placeholder="Contenido"></textarea>
-            <button>Publicar</button>
+        <section class="relacionados">
+            <h2>Otros artículos</h2>
+            <div class="mini-grid">
+                <article class="mini-card"><h4>Noticia breve 1</h4></article>
+                <article class="mini-card"><h4>Noticia breve 2</h4></article>
+                <article class="mini-card"><h4>Noticia breve 3</h4></article>
+            </div>
         </section>
 
     </main>
 
-    <!-- FOOTER GRANDE -->
-    <footer>
-        <div class="footer-contenido">
-            <div>
-                <h4>El Faro</h4>
-                <p>Portal de noticias moderno</p>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>El Faro</h3>
+                <p>Portal de noticias moderno y actualizado.</p>
             </div>
 
-            <div>
+            <div class="footer-col">
                 <h4>Secciones</h4>
-                <p>Deporte</p>
-                <p>Negocios</p>
+                <a href="index.html">Inicio</a>
+                <a href="deporte.html">Deportes</a>
+                <a href="negocios.html">Negocios</a>
             </div>
 
-            <div>
+            <div class="footer-col">
                 <h4>Contacto</h4>
-                <p>correo@elfaro.cl</p>
+                <p>contacto@elfaro.cl</p>
             </div>
+
         </div>
 
-        <p class="copyright">© 2026 El Faro</p>
+        <div class="footer-bottom">
+            © 2026 El Faro - Todos los derechos reservados
+        </div>
     </footer>
 
 </body>
+</html>
