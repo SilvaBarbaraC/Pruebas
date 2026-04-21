@@ -130,22 +130,31 @@ function actualizarHora() {
 }
 setInterval(actualizarHora, 1000);
 actualizarHora();
-
-const audio = document.getElementById("musica");
-audio.volume = 0.2;
-</script>
 <script>
-const audio = document.getElementById("musica");
-const boton = document.getElementById("controlMusica");
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-boton.addEventListener("click", () => {
-    if (audio.paused) {
-        audio.play();
-        boton.textContent = "🔊 Pausar música";
-    } else {
-        audio.pause();
-        boton.textContent = "🔇 Reproducir música";
+    const audio = document.getElementById("musica");
+    const boton = document.getElementById("controlMusica");
+
+    // volumen inicial
+    if (audio) {
+        audio.volume = 0.2;
     }
+
+    // control botón
+    if (boton && audio) {
+        boton.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                boton.textContent = "🔊 Pausar música";
+            } else {
+                audio.pause();
+                boton.textContent = "🔇 Reproducir música";
+            }
+        });
+    }
+
 });
 </script>
 
