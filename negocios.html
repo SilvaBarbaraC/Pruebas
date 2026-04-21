@@ -3,32 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Negocios</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <div class="avisos">
+        <p>💼 Economía en alza | 📊 Nuevas inversiones</p>
+    </div>
 
     <header>
         <img src="img/logo.png">
         <h1>El Faro</h1>
+        <div id="fechaHora"></div>
     </header>
 
     <nav>
         <a href="index.html">Inicio</a>
-        <a href="deporte.html">Deporte</a>
+        <a href="deporte.html">Deportes</a>
         <a href="negocios.html">Negocios</a>
     </nav>
 
-    <section>
-        <h2>Noticias de Negocios</h2>
-        <table>
-            <tr><th>Título</th><th>Categoría</th><th>Contenido</th></tr>
-            <tr><td>Crecimiento mayor al esperado</td><td>Empresas y Negocios</td><td>La famosa empresa de confites Pruna, ha resaltado sus buenos números este 2026, manifestando en sus palabras que "muchas ganancias, nunca habíamos visto tanta ganacia como este año tanta ganancia".</td></tr>
-            <tr><td>Apertura de nueva Tienda desierta la curiosidad de los transeúntes</td><td>Emprendimientos</td><td>Una curiosa tienda ha inaugurado sus dependencias en la comuna de Rancagua, la tienda "Una tienda imaginaria" causa revuelto al encontrarse aparentemente vacía, cuando se le consultó al dueño este afirmó "esta es una tienda imaginaria, con productos imaginarios para un lugar imaginario".</td></tr>
-            <tr><td>Lazamiento de nueva app</td><td>Tecnología y innovación</td><td>Este pasado Jueves se ha llevado a cabo el lanzamiento de una nueva aplicación para móviles, que tiene como objetivo avisarle a las personas que momento del día es el más conveniente para sacar la basura sin tener que toparse cono sus vecinos. La aplicación ha sido un rotundo éxito.</td></tr>
-        </table>
-    </section>
+    <main>
 
-    <footer>© 2026 El Faro</footer>
+        <section>
+            <h2>Noticias de Negocios</h2>
+            <div class="card">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Empresa crece</h3>
+                            <p>Resultados positivos impulsan el mercado.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Nueva inversión</h3>
+                            <p>Proyectos innovadores atraen capital.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="relacionados">
+            <h2>Otros artículos</h2>
+            <div class="mini-grid">
+                <article class="mini-card"><h4>Mercado global</h4></article>
+                <article class="mini-card"><h4>Startups</h4></article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>El Faro</h3>
+                <p>Portal de noticias moderno y actualizado.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Secciones</h4>
+                <a href="index.html">Inicio</a>
+                <a href="deporte.html">Deportes</a>
+                <a href="negocios.html">Negocios</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>contacto@elfaro.cl</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 El Faro
+        </div>
+    </footer>
 
 </body>
 </html>
